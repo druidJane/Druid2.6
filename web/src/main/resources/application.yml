@@ -1,4 +1,5 @@
 server:
     port: 9000
+    contextPath: /operator/service
     session:
         timeout: 1200

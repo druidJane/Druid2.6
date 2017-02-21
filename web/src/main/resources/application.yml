@@ -1,5 +1,15 @@
 server:
-    port: 10000
+    port: 9100
     contextPath: /operator/service
     session:
         timeout: 1200
+    tomcat:
+      accesslog:
+        enabled: true
+        directory: logs
+shiro:
+    loginUrl: /login
+    filters:
+        /login: anonymous
+        /logout: anonymous
+        /**: authorization

@@ -26,7 +26,9 @@
     <!-- 声明需要暴露的服务接口 -->
 
     <dubbo:service interface="com.druid.AccountService" ref="accountService" />
+    <dubbo:service interface="com.druid.UserService" ref="userService" />
 
-    <!-- 和本地bean一样实现服务 -->
+    <!--&lt;!&ndash; 和本地bean一样实现服务 &ndash;&gt;
     <bean id="accountService" class="com.druid.module.AccountServiceImpl" />
+    <bean id="userService" class="com.druid.module.UserServiceImpl" />-->
 </beans>

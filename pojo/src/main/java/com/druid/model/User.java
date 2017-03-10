@@ -4,12 +4,15 @@ package com.druid.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * Created by druid on 23/11/16.
  */
 @Entity
-public class User {
+public class User implements Serializable{
+    private static final  long serialVersionID=1L;
+
     @Id
     @GeneratedValue
     private Long id;

@@ -15,4 +15,5 @@
     <dubbo:registry address="zookeeper://127.0.0.1:2181" />
     <!-- 生成远程服务代理，可以和本地bean一样使用xxxxService -->
     <dubbo:reference id="AccountService" interface="com.druid.AccountService" />
+    <dubbo:reference id="UserService" interface="com.druid.UserService" />
 </beans>

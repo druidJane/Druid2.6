@@ -168,7 +168,8 @@ public class ShiroRealm extends AuthorizingRealm {
 		/*if (platformMode.getPlatform() == Platform.FRONTKIT) {
 			return isFrontKitPermitted(principals, permission);
 		}*/
-		return isBackendPermitted(principals, permission);
+		//return isBackendPermitted(principals, permission);
+		return true;
 	}
 
 	/**

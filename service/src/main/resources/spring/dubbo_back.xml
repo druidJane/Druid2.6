@@ -39,5 +39,6 @@
     <!-- 要暴露的服务接口 -->
 
     <dubbo:service interface="com.druid.AccountService" ref="AccountService" />
+    <dubbo:service interface="com.druid.UserService" ref="UserService" />
 
 </beans>

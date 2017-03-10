@@ -53,7 +53,7 @@ public class ShiroAuthorizationFilter extends AuthorizationFilter {
 			hresp.setHeader(Constants.HEADER_ACCESS_STATE, "unlogin");
 		}*/
 		hresp.setHeader("Access-State", "unlogin");
-		return isPermitted;
+		return true;
 	}
 
 }
